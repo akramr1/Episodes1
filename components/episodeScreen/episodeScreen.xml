@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="episodeScreen" extends="Group" initialFocus="itemList" xsi:noNameSpaceSchemaLocation="https://devtools.web.roku.com/schema/RokuSceneGraph.xsd">
+    <script type="text/brightscript" uri="pkg:/source/utils.brs" />
+    <script type="text/brightscript" uri="episodeScreen.brs"/>    
+    
+    <interface>
+        <field id="content" type="node" alwaysNotify="true" onChange="onContentChange" />
+        <field id="selectedItem" type="vector2d" alwaysNotify="true"/>
+        <field id="jumpToItem" type="integer" alwaysNotify="true" onChange="onJumpToItem"/>
+    </interface>
+    <children>
+        <layoutGroup layoutDirection="horiz" itemSpacing="[20]" translation="[90,150]">
+            <LabelList 
+            id="categoryList" 
+            itemSpacing="[0,10]"
+            itemSize="[360,48]"/>
+            
+            <MarkupList
+            id="itemList"
+            focusBitmapUri="pkg:/images/focus.9.png"
+            focusFootprintBitmapUri="pkg:/images/focus.9.png"
+            numRows="3"
+            itemSize="[650,160]"
+            itemSpacing="[0,20]"/>
+
+        </layoutGroup>
+    </children>
+</component> 

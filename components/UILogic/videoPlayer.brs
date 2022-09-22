@@ -1,27 +1,28 @@
 
 
 
-sub showVideoScr(rowContent as object,selectedItem as integer, isSeries=false as boolean)
+sub showVideoScr(rowContent as object, selectedItem as integer, isSeries = false as boolean)
 
     m.isSeries = isSeries
-    m.videoPlayer = createObject("roSGNode","video")
+    m.videoPlayer = createObject("roSGNode", "video")
     '=== if selected item is not 1st, then we clone partial starting at selected item
     if selectedItem <> 0
-        childClone = cloneChildren(rowContent,selectedItem) 
+        childClone = cloneChildren(rowContent, selectedItem)
         rowNode = CreateObject("roSGNode", "ContentNode")
-        rowNode.update({children: childClone}, true)
+        rowNode.update({ children: childClone }, true)
         m.videoPlayer.content = rowNode
     else
-    '=== if selected item is the 1st, we clone all 
-        m.videoPlayer.content = rowContent.clone(true)    
-    endif  
+        '=== if selected item is the 1st, we clone all
+        m.videoPlayer.content = rowContent.clone(true)
+    end if
     m.videoPlayer.contentIsPlayList = true
     showScr(m.videoPlayer)
     m.videoPlayer.control = "play"
-    m.videoPlayer.observeField("state","onPlayerStateChng")
-    m.videoPlayer.observeField("visible","onPlayerVisibilityChng")
+    m.videoPlayer.observeField("state", "onPlayerStateChng")
+    m.videoPlayer.observeField("visible", "onPlayerVisibilityChng")
 
-endsub
+end sub
+
 
 
 sub onPlayerStateChng()
@@ -29,8 +30,8 @@ sub onPlayerStateChng()
     state = m.videoPlayer.state
     if state = "error" or state = "finished"
         closeScr(m.videoPlayer)
-    endif
-endsub
+    end if
+end sub
 
 
 sub onPlayerVisibilityChng()
@@ -44,7 +45,7 @@ sub onPlayerVisibilityChng()
             m.isSeries = false
         else
             newIdx += currIdx
-        endif
+        end if
         scr.jumpToItem = newIdx
-    endif
-endsub
+    end if
+end sub

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <component name="gridScr" extends="Group" initialfocus="largeGrid">
-    <script type="text/brightscript" uri="gridScr.brs" />
+    <script type="text/brightscript" uri="gridScr1.brs" />
     <script type="text/brightscript" uri="pkg:/source/utils.brs"/>
     <interface>
         

@@ -5,14 +5,14 @@
     <script type="text/brightscript" uri="pkg:/source/utils.brs"/>
     <interface>
         
-        <field id="content" type="node" alias="RowList.content"/>
-        <field id="rowItemSelected" type="intarray" alias="LargeGrid.rowItemSelected" />
-        <field id="jumpToRowItem" type="intarray" alias="LargeGrid.jumpToRowItem" />
+        <field id="content" type="node" alias="largeGrid.content"/>
+        <field id="rowItemSelected" type="intarray" alwaysnotify="true" alias="largeGrid.rowItemSelected" />
+        <field id="jumpToRowItem" type="intarray" alias="largeGrid.jumpToRowItem" />
         
     </interface>
 
     <children>
-        <label id="titleLabel"
+        <label id="titleLabel" 
         width="2000"
         translation="[50,0]"
         />
@@ -20,6 +20,7 @@
         id="descLabel"
         width="2000"
         numlines="3"
+        wrap="true"
         translation="[50,100]"
         />
         <RowList

@@ -17,7 +17,7 @@ sub getContent()
     if json <> invalid
         for each category in json
             val = json.lookUp(category)
-            if val = "roArray"
+            if type(val) = "roArray"
                 row = {}
                 row.title = category
                 row.children = []

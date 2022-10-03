@@ -24,7 +24,7 @@
         />
         <RowList
         id="largeGrid"
-        RowListItemComponent="rowListItemComponent"
+        itemComponentName="RowListItemComponent"
         numRows="2"
         rowitemSize="[[320,120]]"
         rowItemSpacing="[20,0]"

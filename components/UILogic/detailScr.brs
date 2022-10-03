@@ -19,7 +19,7 @@ sub onDetailScrVisibilityChng(event as object)
     currScr = getCurrentScr()
     scrType = currScr.subType()
     if visible = false
-        if scrType = "gridScreen"
+        if scrType = "gridScr1"
             currScr.jumpToRowItem = [m.selectedIdx[0],detailScr.itemFocused]
         elseif scrType = "episodeScreen"
             content = detailScr.content.getChild(detailScr.itemFocused)

@@ -2,7 +2,7 @@
 
 
 sub showGridScr()
-    m.gridScr = createObject("roSGNode","gridScr")
+    m.gridScr = createObject("roSGNode","gridScr1")
     m.gridScr.observeField("rowItemSelected","onGridScrItemSelected")
     showScr(m.gridScr)
 endsub

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<component name="gridScr" extends="Group" initialfocus="largeGrid">
+<component name="gridScr1" extends="Group" initialfocus="largeGrid">
     <script type="text/brightscript" uri="gridScr1.brs" />
     <script type="text/brightscript" uri="pkg:/source/utils.brs"/>
     <interface>
@@ -10,15 +10,15 @@
         <field id="jumpToRowItem" type="intarray" alias="largeGrid.jumpToRowItem" />
         
     </interface>
-
+ 
     <children>
         <label id="titleLabel" 
-        width="2000"
+        width="1020"
         translation="[50,0]"
         />
         <label 
         id="descLabel"
-        width="2000"
+        width="1020"
         numlines="3"
         wrap="true"
         translation="[50,100]"
@@ -29,11 +29,12 @@
         numRows="2"
         rowitemSize="[[320,120]]"
         rowItemSpacing="[20,0]"
-        itemSize="[1800,270]"
+        itemSize="[1100,270]"
         rowLabelOffset="[[50,20]]"
         focusXOffset="[50]"
         showRowLabel="[true]"
         rowFocusAnimationStyle="floatingFocus"
         />
     </children>
+
 </component>

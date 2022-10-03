@@ -10,7 +10,7 @@ sub showScr(node as object)
     if prev <> invalid then
         prev.visible=false
     endif
-    m.Top.appendChiled(node)
+    m.Top.appendChild(node)
     node.visible=true
     node.setFocus(true)
     m.screenStack.Push(node)

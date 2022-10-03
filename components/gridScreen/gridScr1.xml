@@ -10,7 +10,6 @@
         <field id="jumpToRowItem" type="intarray" alias="largeGrid.jumpToRowItem" />
         
     </interface>
- 
     <children>
         <label id="titleLabel" 
         width="1020"

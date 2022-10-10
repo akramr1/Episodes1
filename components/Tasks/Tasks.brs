@@ -74,7 +74,7 @@ function getSeasonData(seasons as Object) as Object
     if seasons <> invalid
         episodeCounter = 0
         for each season in seasons
-            if seasons.episodes <> invalid
+            if season.episodes <> invalid
                 episodes = []
                 for each episode in seasons.episodes
                     episodeData = getItemData(episode)

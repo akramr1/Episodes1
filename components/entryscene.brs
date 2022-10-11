@@ -16,11 +16,13 @@ endsub
 
 function onKeyEvent(key as string, press as boolean) as boolean
     res = false
-    if press = "back"
-        numScreens = m.screenStack.Count()
-        if numScreens > 1
-            closeScr(invalid)
-            res = true
+    if press = true
+        if key = "back"
+            numScreens = m.screenStack.Count()
+            if numScreens > 1
+                closeScr(invalid)
+                res = true
+            endif
         endif
     endif
     return res

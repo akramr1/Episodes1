@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../scenegraph-master-sample-master/EpisodesScreen"
 		}
 	],
 	"settings": {}

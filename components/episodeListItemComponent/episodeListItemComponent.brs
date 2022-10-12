@@ -14,8 +14,8 @@ endsub
 
 
 sub itemContentChanged()
-    itemContent = m.Top.itemContem
-    if itemCOntent<> invalid
+    itemContent = m.Top.itemContent
+    if itemContent<> invalid
         m.poster.uri = itemContent.hdposterUrl
         m.title.text = itemContent.title
         divider = " | "
@@ -24,6 +24,6 @@ sub itemContentChanged()
         date = itemContent.releaseDate
         season = itemContent.titleSeason
         m.info.text = episode + divider + date + divider + time + divider + season
-        m.description.text = itemCOntent.description
+        m.description.text = itemContent.description
     endif
 endsub

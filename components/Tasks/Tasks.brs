@@ -49,7 +49,7 @@ function getItemData(video as Object) as Object
     else 
         item.description = video.shortDescription
     endif
-    item.hdPoserURL = video.thumbnail
+    item.hdPosterURL = video.thumbnail
     item.title = video.title
     item.releaseDate = video.releaseDate
     item.id = video.id

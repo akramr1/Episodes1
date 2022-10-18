@@ -86,7 +86,7 @@ function getSeasonData(seasons as Object) as Object
                 endfor        
             seasonData = getItemData(season)
             seasonData.children = episodes
-            season.contentType = "section"
+            seasonData.contentType = "section"
             seasonsArray.Push(seasonData)
             endif
         endfor

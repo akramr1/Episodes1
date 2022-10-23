@@ -27,7 +27,7 @@
         itemComponentName="RowListItemComponent"
         numRows="2"
         rowitemSize="[[320,120]]"
-        rowItemSpacing="[20,0]"
+        rowItemSpacing="[20]"
         itemSize="[1100,270]"
         rowLabelOffset="[[50,20]]"
         focusXOffset="[50]"

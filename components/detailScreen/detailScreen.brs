@@ -41,7 +41,7 @@ sub setDetailsContent(content as Object)
     if content.Length <> invalid and content.Length <> 0
         m.timeLable.text = formatTime(content.Length)
     endif
-    m.title.text = content.title
+    m.titleLabel.text = content.title
     m.releaseLabel.text = left(content.releaseDate,10)
     if content.mediaType = "series"
         setButtons(["Play","See All Episodes"]) 

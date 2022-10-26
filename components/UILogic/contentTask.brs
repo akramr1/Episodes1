@@ -10,7 +10,7 @@ endsub
 
 
 
-sub onCententLoad()
+sub onContentLoad()
     m.gridScr.setFocus(true)
     m.loadingIndicator.visible = false
     m.gridScr.content = m.contentTask.content

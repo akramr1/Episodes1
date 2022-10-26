@@ -10,7 +10,7 @@ sub showScr(node as object)
     if prev <> invalid then
         prev.visible=false
     endif
-    m.Top.appendChiled(node)
+    m.Top.appendChild(node)
     node.visible=true
     node.setFocus(true)
     m.screenStack.Push(node)
@@ -21,7 +21,7 @@ sub closeScr(node as object)
     if node = invalid OR (m.screenStack.Peek()<> invalid AND m.scfeenStack.Peek().IsSameNode(node))
         last=node.screenStack.Pop()
         last.visible=false
-        m.Top.removeCild(last)
+        m.Top.removeChild(last)
         prev=m.screenStack.Peek()
         if prev <> invalid
         prev.visible=true

@@ -6,7 +6,7 @@ sub main(args as object)
     mScreen = createObject("roSGScreen")
     m.Port = createObject("roMessagePort")
     mScreen.setMessagePort(m.Port)
-    mScene=mScreen.createObject("entryScene")
+    mScene=mScreen.createScene("entryScene")
     mScreen.show()
 
     while true
